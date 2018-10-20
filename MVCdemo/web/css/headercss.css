@@ -3,6 +3,8 @@
     color: white;
     height: 100%;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 #wrapper{
     font-family: sans-serif;
@@ -12,16 +14,19 @@
     top: 0;
     right: 0;
     width: 100%;
+    background: linear-gradient(to right, #ace2fc,white, #ace2fc);
 }
 #header{
     position: fixed;
     color: white;
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 52px;
     background: linear-gradient(to bottom,#328ef5, #2164af);
+    border:1px solid #2164af;
     box-sizing: border-box;
     position: fixed;
+    z-index: 3;
 }
 .icon{
     margin: 10px;

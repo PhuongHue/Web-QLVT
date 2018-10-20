@@ -24,12 +24,10 @@
         color: black;
     } 
 </style>
-<div>
-    <div class="footer-container">
-        <div class="footer">
-            <p>&copy; Bản quyền thuộc về Chúng tôi.</p>
-            <p><i class="fas fa-phone-square"></i>
-                : HN - <a href="tel:+8434715794 " class="tel">034715794</a>
-        </div>
+<div class="footer-container">
+    <div class="footer">
+        <p>&copy; Bản quyền thuộc về Chúng tôi.</p>
+        <p><i class="fas fa-phone-square"></i>
+            : HN - <a href="tel:+8434715794 " class="tel">034715794</a>
     </div>
 </div>

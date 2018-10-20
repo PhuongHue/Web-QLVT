@@ -18,30 +18,39 @@
         <div id="container">
             <div id="content">
                 <div class="table_title">Doanh Thu Thể Loại</div>
-                <table>
-                    <tr>
-                        <th>Tên Thể Loại</th>
-                        <th>Doanh Thu</th>
-                    </tr>
-                    <c:forEach var="tempCategory" items="${category_List}">
+                <table class="tableBodyScroll">
+                    <thead>
                         <tr>
-                            <td> ${tempCategory.name} </td>
-                            <td> ${tempCategory.revenue}</td>
+                            <th>Tên Thể Loại</th>
+                            <th>Doanh Thu</th>
                         </tr>
-                    </c:forEach>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="tempCategory" items="${category_List}">
+                            <tr>
+                                <td> ${tempCategory.name} </td>
+                                <td> ${tempCategory.revenue}</td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>                    
                 </table>
                 <div class="table_title">Doanh Thu Nhà Sản Xuất</div>
-                <table>
-                    <tr>
-                        <th>Tên Nhà Sản Xuất</th>
-                        <th>Doanh Thu</th>
-                    </tr>
-                    <c:forEach var="tempProducer" items="${producer_List}">
+                <table class="tableBodyScroll">
+                    <thead>
                         <tr>
-                            <td> ${tempProducer.id} </td>
-                            <td> ${tempProducer.revenue}</td>
+                            <th>Tên Nhà Sản Xuất</th>
+                            <th>Doanh Thu</th>
                         </tr>
-                    </c:forEach>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="tempProducer" items="${producer_List}">
+                            <tr>
+                                <td> ${tempProducer.id} </td>
+                                <td> ${tempProducer.revenue}</td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+
                 </table>
             </div>
         </div>

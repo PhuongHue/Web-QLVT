@@ -11,11 +11,12 @@
     <body>
         <%@ include file = "/header/header.jsp" %>
         <div id="container">
-            <h3>Cập Nhất Nhà Sản Xuất</h3>
+            <div id="content">
+            <div class="table_title">Cập Nhất Nhà Sản Xuất</div>
             <form action="ProducerServletController" method="GET">
                 <input type="hidden" name="command" value="UPDATE" />
                 <input type="hidden" name="producerId" value="${the_Producer.id}" />
-                <div id="add-category">
+                <div class="add-form">
                     <div>
                         <label>Tên:</label>
                         <input type="text" name="name" value="${the_Producer.name}" />
@@ -24,7 +25,7 @@
                         <label>NTL:</label>
                         <input type="text" name="dob" value="${the_Producer.dobString}" />
                     </div>
-                    <div>
+                    <div class="right">
                         <input type="submit" value="Save" class="button" />
                     </div>
                 </div>
@@ -32,9 +33,10 @@
                 </table>
             </form>
             <div style="clear: both;"></div>
-            <p>
+            <div class="left">
                 <a class="button left" href="ProducerServletController">Quay lại danh sách</a>
-            </p>
+            </div>
+            </div>
         </div>
         <%@include file="/footer/footer.jsp" %>
     </body>

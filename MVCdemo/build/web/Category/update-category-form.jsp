@@ -19,7 +19,7 @@
             //<c:out>	Gửi output cho JspWriter hiện hành
             //<c:param>	Xác định 1 tham số URL cho <c:import> hay <c:url>
             //<c:url>	Tạo 1 URL
-%>
+        %>
 
     </head>
 
@@ -27,25 +27,26 @@
         <%@ include file = "/header/header.jsp" %>
 
         <div id="container">
-            <h3>Cập Nhật Thể Loại</h3>
+            <div id="content">
+                <div class="table_title">Cập Nhật Thể Loại</div>
+                <form  action="CategoryControllerServlet" method="GET">
+                    <input type="hidden" name="command" value="UPDATE" /> 
+                    <input type="hidden" name="categoryId" value="${the_Category.id}" />
+                    <div class="add-form">
+                        <div>
+                            <label for="name">Tên:</label>
+                            <input type="text" name="name"/>
+                        </div>
+                        <div class="right">
+                            <input type="submit" value="Save" class="button right" />         
+                        </div>
+                    </div>
 
-            <form  action="CategoryControllerServlet" method="GET">
-                <input type="hidden" name="command" value="UPDATE" /> 
-                <input type="hidden" name="categoryId" value="${the_Category.id}" />
-                <div id="add-category">
-                    <div>
-                        <label for="name">Tên:</label>
-                        <input type="text" name="name"/>
-                    </div>
-                    <div>
-                        <input type="submit" value="Save" class="button" />         
-                    </div>
+                </form>
+                <div class="left">
+                    <a href="CategoryControllerServlet"><div class="button">Quay lại danh sách</div></a>
                 </div>
-
-            </form>
-            <p>
-                <a href="CategoryControllerServlet"><div class="button right">Quay lại danh sách</div></a>
-            </p>
+            </div>
         </div>
         <%@include file="/footer/footer.jsp" %>
     </body>

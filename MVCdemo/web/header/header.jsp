@@ -19,7 +19,12 @@
             <div>QUẢN LÝ VẬT TƯ</div>
         </div>
         <div class="header-right">
-            <div class="menu_item"> <div class="icon"><i class="fas fa-user-tie"></i></div><%=user.getName()%></div>
+            <div class="menu_item"> 
+                <div class="icon"><i class="fas fa-user-tie"></i></div><%=user.getName()%>
+            </div>
+            <div class="menu_item">
+                <a href="MaterialsStoreControllerServlet">HOME</a>
+            </div>
             <div class="menu_item">
                 <div>QUẢN LÝ</div> 
                 <div class="sub_menu">
@@ -32,8 +37,8 @@
             <div class="menu_item">
                 <div>BÁO CÁO</div>
                 <div class="sub_menu">
-                    <a href="MaterialsStoreControllerServlet?command=TOP_PRODUCER_REVENUE"><div class="sub_menu_item">Top NSX</div></a>
                     <a href="MaterialsStoreControllerServlet?command=TOP_CATEGORY_REVENUE"><div class="sub_menu_item">Top Thể Loại</div></a>
+                    <a href="MaterialsStoreControllerServlet?command=TOP_PRODUCER_REVENUE"><div class="sub_menu_item">Top NSX</div></a>
                 </div>
             </div>
             <a href="UserServletController?command=LOGOUT">

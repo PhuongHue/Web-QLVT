@@ -1,9 +1,9 @@
 tr:nth-child(even) {background: none}
-#add-category{
+.add-form{
     display: block;
     width: 100%;
 }
-#add-category>div{
+.add-form>div{
     width: 100%;
     margin: 20px 0;
 }
@@ -12,8 +12,14 @@ tr:nth-child(even) {background: none}
 }
 input{
     width: 100%;
-    min-height: 42px;
+    min-height: 38px;
 }
-tr{
-    text-align:left;
+select{
+    width: 100%;
+    min-height: 38px;
+}
+.table_title{
+    margin-top: 20px;
+    color: green;
+    text-shadow: 1px 1px white;
 }

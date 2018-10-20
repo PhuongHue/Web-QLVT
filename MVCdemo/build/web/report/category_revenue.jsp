@@ -14,19 +14,24 @@
             <div id="content">
                 <!-- put new button: Add BookStore -->
                 <div class="table_title">Doanh Thu Thể Loại</div>
-                <table>
-                    <tr>
-                        <th>Tên Thể Loại</th>
-                        <th>Doanh Thu</th>
-                    </tr>
-                    <c:forEach var="tempCategory" items="${category_List}">
+                <table class="tableBodyScroll">
+                    <thead>
                         <tr>
-                            <td> ${tempCategory.name} </td>
-                            <td> ${tempCategory.revenue}</td>
+                            <th>Tên Thể Loại</th>
+                            <th>Doanh Thu</th>
                         </tr>
-                    </c:forEach>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="tempCategory" items="${category_List}">
+                            <tr>
+                                <td> ${tempCategory.name} </td>
+                                <td> ${tempCategory.revenue}</td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>   
                 </table>
             </div>
         </div>
+        <%@include file="/footer/footer.jsp" %>
     </body>
 </html>
