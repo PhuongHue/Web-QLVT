@@ -16,7 +16,10 @@ body{
 .background{
     background: linear-gradient(to right, #ace2fc,white, #ace2fc);
     box-sizing: border-box;
-    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 .main{
     margin-top: 100px;
