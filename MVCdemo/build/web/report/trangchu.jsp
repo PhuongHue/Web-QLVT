@@ -45,7 +45,7 @@
                     <tbody>
                         <c:forEach var="tempProducer" items="${producer_List}">
                             <tr>
-                                <td> ${tempProducer.id} </td>
+                                <td> ${tempProducer.name} </td>
                                 <td> ${tempProducer.revenue}</td>
                             </tr>
                         </c:forEach>

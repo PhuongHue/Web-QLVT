@@ -33,7 +33,6 @@
                     <a href="MaterialsControllerServlet"><div class="sub_menu_item">Quản Lý Vật Tư</div></a>
                 </div>
             </div>    
-
             <div class="menu_item">
                 <div>BÁO CÁO</div>
                 <div class="sub_menu">
